@@ -61,14 +61,14 @@ const handler = async (req: VercelRequest, res: VercelResponse) => {
       ${cartItems}
     </table>
     <br/>
-    <p>Email: ${req.body.email}</p>
-    <p>İsim: ${req.body.name}</p>
-    <p>Firma: ${req.body.firm}</p>
-    <p>Vergi No: ${req.body.tax_number}</p>
-    <p>Tel.No: ${req.body.phone}</p>
-    <p>Diğer Ürünler: ${req.body.other_products}</p>
-    <p>Para Birimi: ${req.body.currency}</p>
-    <p>Not: ${req.body.note}</p>
+    <p>Email: ${req.body?.email ?? ""}</p>
+    <p>İsim: ${req.body?.name ?? ""}</p>
+    <p>Firma: ${req.body?.firm ?? ""}</p>
+    <p>Vergi No: ${req.body?.tax_number ?? ""}</p>
+    <p>Tel.No: ${req.body?.phone ?? ""}</p>
+    <p>Diğer Ürünler: ${req.body?.other_products ?? ""}</p>
+    <p>Para Birimi: ${req.body?.currency ?? ""}</p>
+    <p>Not: ${req.body?.note ?? ""}</p>
   `,
   };
 
