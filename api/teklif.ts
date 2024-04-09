@@ -67,6 +67,8 @@ const handler = async (req: VercelRequest, res: VercelResponse) => {
     <p>Vergi No: ${req.body.tax_number}</p>
     <p>Tel.No: ${req.body.phone}</p>
     <p>Diğer Ürünler: ${req.body.other_products}</p>
+    <p>Para Birimi: ${req.body.currency}</p>
+    <p>Not: ${req.body.note}</p>
   `,
   };
 
