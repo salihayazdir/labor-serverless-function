@@ -33,8 +33,8 @@ const handler = async (req: VercelRequest, res: VercelResponse) => {
     : "";
 
   let mailOptions = {
-    from: "teklif@labor.com.tr",
-    to: "salihayazdir@gmail.com",
+    from: process.env.MAIL_FROM,
+    to: process.env.MAIL_TO,
     subject: "Teklif Sepeti",
     html: `
     <h1>Teklif Talebi</h1>
